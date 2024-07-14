@@ -1,0 +1,51 @@
+@font-face {
+    font-family: "RedditMono";
+    src: url(./../../assets/fonts/RedditMono.ttf);
+}
+
+@font-face {
+    font-family: "Lobster";
+    src: url(./../../assets/fonts/Lobster-Regular.ttf);
+}
+
+header {
+    font-family: "RedditMono";
+}
+
+header .hamburger-menu {
+    display: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+header .logo {
+    font-family: "Lobster";
+    font-weight: 400;
+    font-size: 2em;
+    color: #F1F1F1;
+    cursor: pointer;
+}
+
+span {
+    color: #04D9C3;
+}
+
+.option {
+    color: #F1F1F1;
+    font-weight: 600;
+}
+
+.option:hover {
+    color: #04D9C3;
+    text-decoration: underline;
+    transition: 0.2s;
+}
+
+.btn-icon:hover {
+    background-color: #070707;
+}
