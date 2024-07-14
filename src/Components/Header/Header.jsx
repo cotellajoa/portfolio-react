@@ -9,7 +9,8 @@ import {
     DrawerOverlay,
     DrawerContent,
     DrawerCloseButton,
-    useDisclosure
+    useDisclosure,
+    Button,
   } from '@chakra-ui/react'
 
 import { HamburgerIcon } from '@chakra-ui/icons'
@@ -56,6 +57,13 @@ const Header = () => {
                         <p><a href="">Habilidades</a></p>
                         <p><a href="">Sobre mi</a></p>
                         <p><a href="">Contactame</a></p>
+                        <Button
+                            backgroundColor='blue.400'
+                            mt="2rem"
+                            _hover={{
+                                backgroundColor:'blue.200'
+                            }}
+                        ><a href="https://drive.google.com/file/d/1FBjPr6_Z7qje9DqQ0HrYkkr3Qd269Ch-/view?usp=sharing" target='__blank'>Ver CV</a></Button>
                     </DrawerBody>
                     </DrawerContent>
                 </Drawer>
@@ -68,7 +76,12 @@ const Header = () => {
                 <a href="#third-page" className='option'>Habilidades</a>
                 <a href="#four-page" className='option'>Sobre mi</a>
                 <a href="#fifth-page" className='option'>Contactame</a>
-                
+                <Button
+                    backgroundColor='blue.400'
+                    _hover={{
+                        backgroundColor:'blue.200'
+                    }}
+                ><a href="https://drive.google.com/file/d/1FBjPr6_Z7qje9DqQ0HrYkkr3Qd269Ch-/view?usp=sharing" target='__blank'>Ver CV</a></Button>
             </Flex>
         </Box>
     )
