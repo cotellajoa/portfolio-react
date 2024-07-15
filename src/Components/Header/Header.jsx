@@ -41,7 +41,7 @@ const Header = () => {
 
                 <Drawer
                     isOpen={isOpen}
-                    placement='rigth'
+                    placement='left'
                     onClose={onClose}
                     finalFocusRef={btnRef}
                     size='xs'

@@ -1,14 +1,11 @@
-import { useState } from 'react'
+import React from 'react'
 import './App.css'
-import { Box } from '@chakra-ui/react'
-import Header from './Components/Header/Header'
+import Hero from './pages/Hero/Hero'
 
 function App() {
 
   return (
-    <Box as='section' bgImage='bg.jpg'>
-      <Header/>
-    </Box>
+    <Hero />
   )
 }
 
