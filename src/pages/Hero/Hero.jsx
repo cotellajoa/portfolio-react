@@ -32,7 +32,7 @@ const Hero = () => {
             <Header />
             <Box h="400px" display='flex' alignItems='center' textAlign='center' flexDirection='column' mt='6rem' className='font'>
                 <Heading as='h1' className='font' noOfLines={1} color='white'>Hola, soy <span>Joaquin Cotella</span></Heading>
-                <Heading as='h2' noOfLines={2} size={{base: 'xs', sm: 'xs', md: 'md'}} mt='1rem' color='white'>Un experimentado <span>Desarrollador Fullstack</span> transformando ideas en <br />
+                <Heading as='h2' noOfLines={{base: '4', sm: '3'}} size={{base: 'xs', sm: 'xs', md: 'md'}} mt='1rem' color='white'>Un experimentado <span>Desarrollador Fullstack</span> transformando ideas en <br />
                 impresionantes experiencias digitales. ¡Creemos algo increíble!</Heading>
                 <Flex mt='2rem' columnGap='1rem' alignItems='center'>
                     <IconButton
@@ -43,6 +43,10 @@ const Hero = () => {
                         fontSize='35px'
                         icon={<FaGithub />}
                         onClick={githubClick}
+                        _hover={{
+                            color: 'teal.300'
+                            }
+                        }
                     />
                     <IconButton
                         isRound={true}
@@ -52,6 +56,10 @@ const Hero = () => {
                         fontSize='35px'
                         icon={<SiGmail />}
                         onClick={gmailClick}
+                        _hover={{
+                            color: 'teal.300'
+                            }
+                        }
                     />
                     <IconButton
                         isRound={true}
@@ -61,6 +69,10 @@ const Hero = () => {
                         fontSize='35px'
                         icon={<FaLinkedinIn />}
                         onClick={linkdnClick}
+                        _hover={{
+                            color: 'teal.300'
+                            }
+                        }
                     />
                     <IconButton
                         isRound={true}
@@ -70,6 +82,10 @@ const Hero = () => {
                         fontSize='35px'
                         icon={<FaTwitter />}
                         onClick={xClick}
+                        _hover={{
+                            color: 'teal.300'
+                            }
+                        }
                     />
                 </Flex>
             </Box>
