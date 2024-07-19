@@ -5,6 +5,7 @@ import First from './pages/First/First'
 import { Box } from '@chakra-ui/react'
 import Bio from './pages/Bio/Bio'
 import Skills from './pages/Skills/Skills'
+import Contact from './pages/Contact/Contact'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <First />
       <Bio />
       <Skills />
+      <Contact />
     </Box>
   )
 }
