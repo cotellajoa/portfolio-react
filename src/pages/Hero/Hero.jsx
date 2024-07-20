@@ -31,10 +31,10 @@ const Hero = () => {
         <Box as='section' backgroundImage='/bg.jpg'>
             <Header />
             <Box h="400px" display='flex' alignItems='center' textAlign='center' flexDirection='column' mt='6rem' className='font'>
-                <Heading as='h1' className='font' noOfLines={1} color='white'>Hola, soy <span>Joaquin Cotella</span></Heading>
-                <Heading as='h2' noOfLines={{base: '4', sm: '3'}} size={{base: 'xs', sm: 'xs', md: 'md'}} mt='1rem' color='white'>Un experimentado <span>Desarrollador Fullstack</span> transformando ideas en <br />
+                <Heading as='h1' className='font' noOfLines={[3, 2, 1]} color='white'>Hola, soy <span>Joaquin Cotella</span></Heading>
+                <Heading as='h2' noOfLines={{base: '7', sm: '3'}} size={{base: 'xs', sm: 'xs', md: 'md'}} mt='1rem' color='white'>Un experimentado <span>Desarrollador Fullstack</span> transformando ideas en <br />
                 impresionantes experiencias digitales. ¡Creemos algo increíble!</Heading>
-                <Flex mt='2rem' columnGap='1rem' alignItems='center'>
+                <Flex mt='2rem' columnGap='1rem' alignItems='center' flexWrap='wrap'>
                     <IconButton
                         isRound={true}
                         variant='solid'
