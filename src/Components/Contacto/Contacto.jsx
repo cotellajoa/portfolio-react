@@ -14,7 +14,7 @@ const Contacto = () => {
 
     return (
         <SimpleGrid columns={[1, 1, 2]} className='bg-contacto' as='section'>
-            <Box as='section' p='1rem'>
+            <Box as='section' p={['1rem', '2rem']}>
                 <Heading textAlign='center' color='white' fontSize={['xs', 'sm', 'md']}>Tienes una idea de un proyecto?</Heading>
                 <Heading textAlign='center' color='teal' fontSize={['xs', 'sm', 'md']}>Vamos a hablarlo!</Heading>
                 <Flex gap='1.5rem' flexDirection='column' justifyContent='center' alignItems='center' p='1rem'>
