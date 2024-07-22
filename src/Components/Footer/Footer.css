@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "Lobster";
+    src: url(./../../assets/fonts/Lobster-Regular.ttf);
+}
+
+.bg-footer {
+    background-color: #1f2023;
+    color: #F1F1F1;
+    font-weight: 400;
+}
+
+.logo {
+    font-family: "Lobster";
+    font-weight: 400;
+    font-size: 2em;
+    color: #F1F1F1;
+    cursor: pointer;
+}
