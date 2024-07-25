@@ -10,6 +10,10 @@ El proyecto esta deployado en Vercel con el siguiente link: https://jtella.verce
 React, Javascript, HTML, CSS,
 Chakra UI
 
+## Modificaciones
+- Se modificó el diseño del apartado de Skills.
+- Se borró el apartado de Services
+- Se modificó el diseño del Footer
 
 ## Funcionalidades Principales
 - Diseño completamente responsive que se adapta a diferentes tamaños de pantalla (móvil, tablet, escritorio).
