@@ -15,6 +15,10 @@ Chakra UI
 - Se borró el apartado de Services
 - Se modificó el diseño del Footer
 
+# Paquetes agregados
+- Reak Hook Form
+- React Scroll
+
 ## Funcionalidades Principales
 - Diseño completamente responsive que se adapta a diferentes tamaños de pantalla (móvil, tablet, escritorio).
 - Réplica del diseño original, siendo 100% fiel al diseño de inspiración.
