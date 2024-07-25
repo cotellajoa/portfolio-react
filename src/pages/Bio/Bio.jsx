@@ -11,7 +11,7 @@ import React from 'react'
 const Bio = () => {
 
     return (
-        <Box className='bg-bio' as='section' pb='2rem'>
+        <Box className='bg-bio' as='section' pb='2rem' id='sobre-mi'>
             <Heading size='xs' color='gray' pt='3rem' textAlign='center'>MY BIO</Heading>
             <Heading size='xl' color='white' textAlign='center' mt='1rem' mb='2rem'>Sobre <span>mí</span>.</Heading>
             <Flex flexDirection={['column', 'row']} justifyContent='center' alignItems='center'>

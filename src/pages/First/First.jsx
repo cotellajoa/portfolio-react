@@ -13,7 +13,7 @@ import {
 
 const First = () => {
     return (
-        <Box as="section" className="background-f">
+        <Box as="section" className="background-f" id="proyectos">
             <Heading size='xs' color='gray' pt='3rem' textAlign='center'>PORTFOLIO</Heading>
             <Heading size='xl' color='white' textAlign='center' mt='1rem' mb='2rem'><span>Proyectos</span> Destacados</Heading>
             <Flex backgroundColor='blackAlpha' spacing='40px' padding='1rem' flexWrap='wrap' justifyContent='center' gap='1.5rem'>

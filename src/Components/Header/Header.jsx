@@ -11,8 +11,10 @@ import {
     DrawerCloseButton,
     useDisclosure,
     Button,
-  } from '@chakra-ui/react'
+    Link as ChakraLink,
 
+  } from '@chakra-ui/react'
+import { Link as ScrollLink } from 'react-scroll';
 import { HamburgerIcon } from '@chakra-ui/icons'
 import "./Header.css";
 
@@ -49,14 +51,14 @@ const Header = () => {
                     <DrawerOverlay />
                     <DrawerContent>
                     <DrawerCloseButton />
-                    <DrawerHeader>Portfolio Jtella</DrawerHeader>
+                    <DrawerHeader fontSize={['sm', 'md']}>Portfolio Jtella</DrawerHeader>
 
                     <DrawerBody >
-                        <p><a href="">Inicio</a></p>
-                        <p><a href="">Proyectos</a></p>
-                        <p><a href="">Habilidades</a></p>
-                        <p><a href="">Sobre mi</a></p>
-                        <p><a href="">Contactame</a></p>
+                        <p><ChakraLink as={ScrollLink} smooth={true} duration={500} to='inicio' onClick={() => { onClose(); }}>Inicio</ChakraLink></p>
+                        <p><ChakraLink as={ScrollLink} smooth={true} duration={500} to='proyectos' onClick={() => { onClose(); }}>Proyectos</ChakraLink></p>
+                        <p><ChakraLink as={ScrollLink} smooth={true} duration={1200} to='habilidades' onClick={() => { onClose(); }}>Habilidades</ChakraLink></p>
+                        <p><ChakraLink as={ScrollLink} smooth={true} duration={800} to='sobre-mi' onClick={() => { onClose(); }}>Sobre mi</ChakraLink></p>
+                        <p><ChakraLink as={ScrollLink} smooth={true} duration={1500} to='contacto' onClick={() => { onClose(); }}>Contactame</ChakraLink></p>
                         <Button
                             backgroundColor='blue.400'
                             mt="2rem"
@@ -71,11 +73,11 @@ const Header = () => {
                 <a className="logo">Jtella<span color='#04D9C3'>.</span></a>
             </Flex>
             <Flex alignItems='center' justifyContent="space-between" columnGap="2rem" wrap='wrap' display={ {base: 'none', sm: 'none', md:'flex'}}>
-                <a href="#inicio" id="inicio" className='option'>Inicio</a>
-                <a href="#second-page" className='option'>Proyectos</a>
-                <a href="#third-page" className='option'>Habilidades</a>
-                <a href="#four-page" className='option'>Sobre mi</a>
-                <a href="#fifth-page" className='option'>Contactame</a>
+                <ChakraLink as={ScrollLink} to='inicio' smooth={true} duration={500} className='option' color='white'>Inicio</ChakraLink>
+                <ChakraLink as={ScrollLink} to='proyectos' smooth={true} duration={500} className='option' color='white'>Proyectos</ChakraLink>
+                <ChakraLink as={ScrollLink} to='habilidades' smooth={true} duration={1200} className='option' color='white'>Habilidades</ChakraLink>
+                <ChakraLink as={ScrollLink} to='sobre-mi' smooth={true} duration={800} className='option' color='white'>Sobre mi</ChakraLink>
+                <ChakraLink as={ScrollLink} to='contacto' smooth={true} duration={1500} className='option' color='white'>Contactame</ChakraLink>
                 <Button
                     backgroundColor='blue.400'
                     _hover={{

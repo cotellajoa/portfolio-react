@@ -16,7 +16,7 @@ import React from 'react'
 const Skills = () => {
 
     return (
-        <Box className='bg-skills' as='section' pb='2rem'>
+        <Box className='bg-skills' as='section' pb='2rem' id='habilidades'>
             <Heading size='xs' color='gray' pt='3rem' textAlign='center'>SKILLS</Heading>
             <Heading size='xl' color='white' mt='1rem' textAlign='center' mb='2rem'>Habilidades <span>técnicas</span>.</Heading>
             <Flex flexDirection={["column", "row"]} justifyContent={['center', 'space-around']} p='1rem' mt='2rem' gap='1rem'>

@@ -6,7 +6,7 @@ import Contacto from '../../Components/Contacto/Contacto'
 const Contact = () => {
 
     return (
-        <Box as='section' bgImage="url('bg-contact.jpg')" bgRepeat='no-repeat' backgroundSize='cover' p='2rem'>
+        <Box as='section' bgImage="url('bg-contact.jpg')" bgRepeat='no-repeat' backgroundSize='cover' p='2rem' id='contacto'>
             <Contacto />
         </Box>
     )
